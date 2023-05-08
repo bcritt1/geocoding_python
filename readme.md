@@ -7,9 +7,9 @@ This repo contains four simple files that execute spaCy's [NER](https://spacy.io
 
 The files consist of:
 
-1. [requirements.txt](https://github.com/bcritt1/geocoding_python/blob/0ebb6914b5fbcb9f8ffa57ec3b2f54bb3a44bc01/requirements.txt): You shouldn't need to touch this. Simply tells python which packages it needs to install to run geocoding.py.
-2. [geocode.py](https://github.com/bcritt1/geocoding_python/blob/0ebb6914b5fbcb9f8ffa57ec3b2f54bb3a44bc01/geocode.py): Runs spaCy and Nominatum, outputing a .csv file with all the places (geopolitical entities) in your corpus and their lat/long coordinates.
-3. [geocode.sbatch](https://github.com/bcritt1/geocoding_python/blob/0ebb6914b5fbcb9f8ffa57ec3b2f54bb3a44bc01/geocode.sbatch): Creates a batch job for geocoding.py.
+1. [requirements.txt](https://github.com/bcritt1/geocoding_python/blob/requirements.txt): You shouldn't need to touch this. Simply tells python which packages it needs to install to run geocoding.py.
+2. [geocode.py](https://github.com/bcritt1/geocoding_python/blob/main/geocode.py): Runs spaCy and Nominatum, outputing a .csv file with all the places (geopolitical entities) in your corpus and their lat/long coordinates.
+3. [geocode.sbatch](https://github.com/bcritt1/geocoding_python/blob/geocode.sbatch): Creates a batch job for geocoding.py.
 
 ## Usage instructions
 
