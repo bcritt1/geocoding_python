@@ -18,15 +18,12 @@ The files consist of:
 ssh yourSUNetID@sherlock.stanford.edu
 ```
 
-2. Once you are logged in, you'll want to have access to these files, which you can get with a couple simple commands. First, we need to install a program called subversion:
+2. Once we are on Sherlock, we'll use a git command to copy the files we need from this github repo:
 ```bash
-ml subversion
+git clone https://github.com/bcritt1/geocoding_python.git
 ```
-and use that program to download the files:
-```
-svn export https://github.com/bcritt1/H-S-Documentation/trunk/scripts/geocoding/python/ geocoding
-```
-This will create a directory in your home space on Sherlock called "geocoding" with all the files in this repository.
+
+This will create a directory in your home space on Sherlock called "geocoding_python" with all the files in this repository.
 ![Repo Pull](https://github.com/bcritt1/H-S-Documentation/blob/main/images/repoPull.png)
 ```bash
 cd geocoding
