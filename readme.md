@@ -7,9 +7,9 @@ This repo contains four simple files that execute spaCy's [NER](https://spacy.io
 
 The files consist of:
 
-1. [requirements.txt](/scripts/geocoding/python/requirements.txt): You shouldn't need to touch this. Simply tells python which packages it needs to install to run geocoding.py.
-2. [geocode.py](/scripts/geocoding/python/geocoding.py): Runs spaCy and Nominatum, outputing a .csv file with all the places (geopolitical entities) in your corpus and their lat/long coordinates.
-3. [geocode.sbatch](/scripts/geocoding/python/geocoding.sbatch): Creates a batch job for geocoding.py.
+1. [requirements.txt](https://github.com/bcritt1/geocoding_python/blob/0ebb6914b5fbcb9f8ffa57ec3b2f54bb3a44bc01/requirements.txt): You shouldn't need to touch this. Simply tells python which packages it needs to install to run geocoding.py.
+2. [geocode.py](https://github.com/bcritt1/geocoding_python/blob/0ebb6914b5fbcb9f8ffa57ec3b2f54bb3a44bc01/geocode.py): Runs spaCy and Nominatum, outputing a .csv file with all the places (geopolitical entities) in your corpus and their lat/long coordinates.
+3. [geocode.sbatch](https://github.com/bcritt1/geocoding_python/blob/0ebb6914b5fbcb9f8ffa57ec3b2f54bb3a44bc01/geocode.sbatch): Creates a batch job for geocoding.py.
 
 ## Usage instructions
 
@@ -27,7 +27,7 @@ and use that program to download the files:
 svn export https://github.com/bcritt1/H-S-Documentation/trunk/scripts/geocoding/python/ geocoding
 ```
 This will create a directory in your home space on Sherlock called "geocoding" with all the files in this repository.
-![Repo Pull](/images/repoPull.png)
+![Repo Pull](https://github.com/bcritt1/H-S-Documentation/blob/main/images/repoPull.png)
 ```bash
 cd geocoding
 ```
@@ -38,7 +38,7 @@ into your new directory.
 sbatch geocode.sbatch
 ```
 
-I tested the script on a list of ~4500 place names (<len(places)> in python) and it took 1.5 hours and consumed a little over 13 gb of memory at most. Therefore the sbatch file 
+I tested the script on a list of ~4500 place names (```len(places)``` in python) and it took 1.5 hours and consumed a little over 13 gb of memory at most. Therefore the sbatch file 
 asks for 2 hours and 16 gb memory. Because of API limits, you can estimate 1-2 seconds per query and adjust the -t line accordingly. The memory usage should stay pretty constant, but because we're cutting 
 it pretty close, you may want to adjust this up.
 
