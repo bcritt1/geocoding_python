@@ -24,7 +24,7 @@ git clone https://github.com/bcritt1/geocoding_python.git
 ```
 
 This will create a directory in your home space on Sherlock called "geocoding_python" with all the files in this repository.
-![Repo Pull](https://github.com/bcritt1/H-S-Documentation/blob/main/images/repoPull.png)
+![Repo Pull](/images/repoPull.png)
 ```bash
 cd geocoding
 ```
