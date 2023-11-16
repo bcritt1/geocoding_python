@@ -16,7 +16,7 @@ else:
 
 # Read in corpus from scratch
 user = os.getenv('USER')
-corpusdir = '/scratch/users/{}/corpus/.format(user)'
+corpusdir = '/scratch/users/{}/corpus/'.format(user)
 corpus = []
 for infile in os.listdir(corpusdir):
     with open(corpusdir+infile, errors='ignore') as fin:
