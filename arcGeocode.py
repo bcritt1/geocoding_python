@@ -7,7 +7,7 @@ import json
 
 # Read in corpus from scratch
 user = os.getenv('USER')
-corpusdir = '/scratch/users/{}/testCorpus/'.format(user)
+corpusdir = '/farmshare/learning/data/emerson/'
 corpus = []
 for infile in os.listdir(corpusdir):
     with open(corpusdir+infile, errors='ignore') as fin:
