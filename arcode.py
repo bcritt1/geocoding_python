@@ -64,7 +64,7 @@ def geocode_places(place_names, api_key):
     return geocoded_results
 
 # Replace 'YOUR_API_KEY' with your actual ArcGIS API key
-arcgis_api_key = '"AAPK53987e9e94374a3c898fb912f7da8efcvjGvCVi5CDWCjpQenmbEkvWA5AlFANnRb6FFcDbOa9G1SX2zk5qW9Sv26JO5wRTN"'
+arcgis_api_key = 'YOUR_API_KEY'
 
 geocoded_results = geocode_places(place_names, arcgis_api_key)
 
